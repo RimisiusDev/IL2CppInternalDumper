@@ -1,6 +1,5 @@
 // dllmain.cpp : Defines the entry point for the DLL application.
 #include "Includes.h"
-#define _SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING
 DWORD WINAPI Main() {
     UnityResolve::Init(GetModuleHandle((const WCHAR*)L"GameAssembly.dll"), UnityResolve::Mode::Il2Cpp);
     fs::path p(".\\IL2Cpp-DumpedGame");
